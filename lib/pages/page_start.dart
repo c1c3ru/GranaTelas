@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
 class PageStart extends StatefulWidget {
   const PageStart({Key? key}) : super(key: key);
@@ -62,15 +63,17 @@ class _PageStartState extends State<PageStart> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
-                                    height: MediaQuery.of(context).size.height *                                        0.10,
-                                    width:  MediaQuery.of(context).size.width * 0.5,
-                                    child: ElevatedButton(onPressed: () {},
+                                    height: MediaQuery.of(context).size.height *
+                                        0.10,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.5,
+                                    child: GestureDetector(
+                                      onTap: () {},
                                       child: Image.asset(
                                         'assets/images/botao_novoJogo.png',
                                         fit: BoxFit.fill,
                                       ),
                                     ),
-
                                   ),
                                 ],
                               ),
@@ -78,9 +81,12 @@ class _PageStartState extends State<PageStart> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
-                                    height: MediaQuery.of(context).size.height *                                        0.10,
-                                    width:  MediaQuery.of(context).size.width * 0.5,
-                                    child: ElevatedButton(onPressed: () {},
+                                    height: MediaQuery.of(context).size.height *
+                                        0.10,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.5,
+                                    child: GestureDetector(
+                                      onTap: () {},
                                       child: Image.asset(
                                         'assets/images/botao_loja.png',
                                         fit: BoxFit.fill,
@@ -93,9 +99,12 @@ class _PageStartState extends State<PageStart> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
-                                    height: MediaQuery.of(context).size.height *                                        0.10,
-                                    width:  MediaQuery.of(context).size.width * 0.5,
-                                    child: GestureDetector(onTap: () {},
+                                    height: MediaQuery.of(context).size.height *
+                                        0.10,
+                                    width:
+                                        MediaQuery.of(context).size.width * 0.5,
+                                    child: GestureDetector(
+                                      onTap: () {},
                                       child: Image.asset(
                                         'assets/images/botao_sobre.png',
                                         fit: BoxFit.fill,

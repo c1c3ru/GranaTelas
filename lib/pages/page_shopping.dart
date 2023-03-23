@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class PageLoja extends StatefulWidget {
+class PageShopping extends StatefulWidget {
   @override
-  _PageLojaState createState() => _PageLojaState();
+  _PageShoppingState createState() => _PageShoppingState();
 }
 
-class _PageLojaState extends State<PageLoja> {
+class _PageShoppingState extends State<PageShopping> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,8 +29,8 @@ class _PageLojaState extends State<PageLoja> {
                   child: Stack(
                     children: [
                       Row(
-                        //mainAxisAlignment: MainAxisAlignment.start,
-                        //mainAxisSize: MainAxisSize.,
+                        // mainAxisAlignment: MainAxisAlignment.start,
+                        // mainAxisSize: MainAxisSize.,
                         children: [
                           Container(
                             alignment: Alignment.centerLeft,
@@ -39,13 +39,13 @@ class _PageLojaState extends State<PageLoja> {
                             child: Image.asset(
                                 'assets/images/bau_topo_branco.png'),
                           ),
-                          Spacer(),
-                          Container(
-                            padding: EdgeInsets.fromLTRB(10, 0, 0, 20),
-                            height: MediaQuery.of(context).size.height * 0.3,
-                            width: MediaQuery.of(context).size.width * 0.1,
-                            child: Image.asset('assets/images/botao_fecha.png'),
-                          ),
+                          // Spacer(),
+                          // Container(
+                          //   padding: EdgeInsets.fromLTRB(10, 0, 0, 20),
+                          //   height: MediaQuery.of(context).size.height * 0.3,
+                          //   width: MediaQuery.of(context).size.width * 0.1,
+                          //   child: Image.asset('assets/images/botao_fecha.png'),
+                          // ),
                         ],
                       ),
                     ],
@@ -65,6 +65,22 @@ class _PageLojaState extends State<PageLoja> {
                       child: Image.asset('assets/images/proxima_tela.png'),
                     ),
                   ],
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.2,
+                  alignment: Alignment.centerRight,
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: Image.asset(
+                      'assets/images/botao_fechar.png',
+                      fit: BoxFit.fill,
+                      width: MediaQuery.of(context).size.width * 0.1,
+                    ),
+                  ),
                 ),
               ],
             ),
