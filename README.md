@@ -16,10 +16,14 @@ Para **instalar** o projeto, basta **clonar** o repositório e **instalar** as *
 ```git clone https://github.com/seu-usuario/seu-projeto.git```
 ```cd seu-projeto/```
 ```flutter pub get```
+
+
 **Execução**
 Para executar o projeto, use o seguinte comando:
 
 ```flutter run```
+
+
 
 # **Descrição**
 
