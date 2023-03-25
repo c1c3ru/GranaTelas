@@ -1,6 +1,6 @@
 # **README**
 
-Este é um projeto em Flutter para o desenvolvimento de um aplicativo Interativo que visa a ensina de maneira lúdica 
+Este é um projeto em Flutter para o desenvolvimento de um aplicativo Interativo que visa a ensinar de maneira lúdica 
 educação financeira.
 
 ## **Pré-requisitos**
