@@ -5,47 +5,47 @@ class PageQuestions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: Stack(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/start.png'),
-                  fit: BoxFit.cover,
+        child: SafeArea(
+          child: Stack(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/start.png'),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-            Column(
-              children: [
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.1,
-                  alignment: Alignment.centerRight,
-                  child: GestureDetector(
-                    onTap: () {},
-                    child: Image.asset(
-                      'assets/images/botao_fechar.png',
-                      fit: BoxFit.fill,
-                      width: MediaQuery.of(context).size.width * 0.1,
+              Column(
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.height * 0.1,
+                    alignment: Alignment.centerRight,
+                    child: GestureDetector(
+                      onTap: () {},
+                      child: Image.asset(
+                        'assets/images/botao_fechar.png',
+                        fit: BoxFit.fill,
+                        width: MediaQuery.of(context).size.width * 0.1,
+                      ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            Column(
-              children: [
-                Container(
-                  height: MediaQuery.of(context).size.height * 0.2,
-                  alignment: Alignment.centerLeft,
-                  child: Image.asset(
-                    'assets/images/menu_novo.png',
-                    fit: BoxFit.fill,
-                    width: MediaQuery.of(context).size.width * 0.4,
+                ],
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.height * 0.2,
+                    alignment: Alignment.centerLeft,
+                    child: Image.asset(
+                      'assets/images/menu_novo.png',
+                      fit: BoxFit.fill,
+                      width: MediaQuery.of(context).size.width * 0.4,
+                    ),
                   ),
-                ),
-              ],
-            ),
-            SafeArea(
-              child: Stack(
+                ],
+              ),
+              Stack(
                 children: [
                   // Column(
                   //   children: [
@@ -68,16 +68,17 @@ class PageQuestions extends StatelessWidget {
                   //   ),
                   // ],),
                   Column(
-                    // mainAxisAlignment: MainAxisAlignment.spaceEvenly, //alterado
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly, //alterado
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Expanded(
-                        child: Container(
-                          alignment: Alignment.center,
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
+                        child: SizedBox(
+                          //alignment: Alignment.center,
                           child: Image.asset(
                             'assets/images/perg.png',
-                            // fit: BoxFit.fill,
-                            width: MediaQuery.of(context).size.width * 0.5,
+                            fit: BoxFit.contain,
+                            width: MediaQuery.of(context).size.width * 0.9,
                           ),
                         ),
                       ),
@@ -88,11 +89,14 @@ class PageQuestions extends StatelessWidget {
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              Container(
-                                child: Image.asset(
-                                  'assets/images/espaco_texto_verde.png',
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.5,
+                              Padding(
+                                padding: EdgeInsets.only(bottom: 10),
+                                child: SizedBox(
+                                  child: Image.asset(
+                                    'assets/images/espaco_texto_verde.png',
+                                    fit: BoxFit.contain,
+                                    width: MediaQuery.of(context).size.width * 0.8,
+                                  ),
                                 ),
                               ),
                               Container(
@@ -110,11 +114,14 @@ class PageQuestions extends StatelessWidget {
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              Container(
-                                child: Image.asset(
-                                  'assets/images/espaco_texto_branco.png',
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.5,
+                              Padding(
+                                padding: EdgeInsets.only(bottom: 10),
+                                child: SizedBox(
+                                  child: Image.asset(
+                                    'assets/images/espaco_texto_branco.png',
+                                    fit: BoxFit.contain,
+                                    width: MediaQuery.of(context).size.width * 0.8,
+                                  ),
                                 ),
                               ),
                               Container(
@@ -132,11 +139,14 @@ class PageQuestions extends StatelessWidget {
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              Container(
-                                child: Image.asset(
-                                  'assets/images/espaco_texto_branco.png',
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.5,
+                              Padding(
+                                padding: EdgeInsets.only(bottom: 10),
+                                child: SizedBox(
+                                  child: Image.asset(
+                                    'assets/images/espaco_texto_branco.png',
+                                    fit: BoxFit.contain,
+                                    width: MediaQuery.of(context).size.width * 0.8,
+                                  ),
                                 ),
                               ),
                               Container(
@@ -154,11 +164,14 @@ class PageQuestions extends StatelessWidget {
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              Container(
-                                child: Image.asset(
-                                  'assets/images/espaco_texto_vermelho.png',
-                                  width:
-                                      MediaQuery.of(context).size.width * 0.5,
+                              Padding(
+                                padding: EdgeInsets.only(bottom: 1),
+                                child: SizedBox(
+                                  child: Image.asset(
+                                    'assets/images/espaco_texto_vermelho.png',
+                                    fit: BoxFit.contain,
+                                    width: MediaQuery.of(context).size.width * 0.8,
+                                  ),
                                 ),
                               ),
                               Container(
@@ -176,14 +189,14 @@ class PageQuestions extends StatelessWidget {
                         ],
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Expanded(
                             child: Container(
                               child: Image.asset(
                                 'assets/images/Bpular.png',
                                 height:
-                                    MediaQuery.of(context).size.height * 0.1,
+                                MediaQuery.of(context).size.height * 0.1,
                                 width: MediaQuery.of(context).size.width * 0.1,
                               ),
                             ),
@@ -193,7 +206,7 @@ class PageQuestions extends StatelessWidget {
                               child: Image.asset(
                                 'assets/images/Bpular.png',
                                 height:
-                                    MediaQuery.of(context).size.height * 0.1,
+                                MediaQuery.of(context).size.height * 0.1,
                                 width: MediaQuery.of(context).size.width * 0.1,
                               ),
                             ),
@@ -203,7 +216,7 @@ class PageQuestions extends StatelessWidget {
                               child: Image.asset(
                                 'assets/images/Bpular.png',
                                 height:
-                                    MediaQuery.of(context).size.height * 0.1,
+                                MediaQuery.of(context).size.height * 0.1,
                                 width: MediaQuery.of(context).size.width * 0.1,
                               ),
                             ),
@@ -213,7 +226,7 @@ class PageQuestions extends StatelessWidget {
                               child: Image.asset(
                                 'assets/images/Bpular.png',
                                 height:
-                                    MediaQuery.of(context).size.height * 0.1,
+                                MediaQuery.of(context).size.height * 0.1,
                                 width: MediaQuery.of(context).size.width * 0.1,
                               ),
                             ),
@@ -241,8 +254,8 @@ class PageQuestions extends StatelessWidget {
                   // ),
                 ],
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
