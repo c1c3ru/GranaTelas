@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class LevelPage extends StatefulWidget {
   @override
@@ -44,21 +45,13 @@ class _LevelPageState extends State<LevelPage> {
                               ),
                             ],
                           ),
-                          // Expanded(
-                          //   child: Padding(
-                          //     // height: MediaQuery.of(context).size.height * 0.3,
-                          //     // width: MediaQuery.of(context).size.width * 0.5,
-                          //     padding: EdgeInsets.all(10),
-                          //     child: Image.asset(
-                          //         'assets/images/bau_topo_branco.png'),
-                          //   ),
-                          // ),
+
                           Column(
                             children: [
                               Container(
                                 alignment: Alignment.centerRight,
                                 child: GestureDetector(
-                                  onTap: () {},
+                                  onTap: () => Modular.to.navigate('/'),
                                   child: Image.asset(
                                     'assets/images/botao_fechar.png',
                                     fit: BoxFit.fill,
@@ -69,20 +62,6 @@ class _LevelPageState extends State<LevelPage> {
                               ),
                             ],
                           ),
-                          // Expanded(
-                          //   child: Padding(
-                          //     // height: MediaQuery.of(context).size.height * 0.09,
-                          //     // width: MediaQuery.of(context).size.width * 0.09,
-                          //     padding: EdgeInsets.all(80),
-                          //     child: GestureDetector(
-                          //       onTap: () {},
-                          //       child: Image.asset(
-                          //         'assets/images/botao_voltar.png',
-                          //         fit: BoxFit.fill,
-                          //       ),
-                          //     ),
-                          //   ),
-                          // )
                         ],
                       ),
                       Expanded(
@@ -111,7 +90,7 @@ class _LevelPageState extends State<LevelPage> {
                                         0.1),
                               ],
                             ),
-                            Stack(children: []),
+                            // Stack(children: []),
                           ],
                         ),
                       ),
@@ -127,13 +106,13 @@ class _LevelPageState extends State<LevelPage> {
                     ),
                   ),
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.end, //alterado
+                    mainAxisAlignment: MainAxisAlignment.end,
                     //: CrossAxisAlignment.center,
                     children: [
                       Container(
                         alignment: Alignment.bottomRight,
                         child: GestureDetector(
-                          onTap: () {},
+                          onTap: () => Modular.to.navigate('/PageShopping'),
                           child: Image.asset(
                             'assets/images/Bloja.png',
                             fit: BoxFit.fill,
@@ -143,17 +122,6 @@ class _LevelPageState extends State<LevelPage> {
                       ),
                     ],
                   ),
-                  // Expanded(
-                  //   child: Column(
-                  //       //  GestureDetector(
-                  //       //    onTap: () {},
-                  //       //    child: Image.asset(
-                  //       //      'assets/images/Bloja.png',
-                  //       //      fit: BoxFit.fill,
-                  //       //    ),
-                  //       //  ),
-                  //       ),
-                  // ),
                 ],
               ),
             ),

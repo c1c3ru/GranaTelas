@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class PageShopping extends StatefulWidget {
   @override
@@ -39,13 +40,6 @@ class _PageShoppingState extends State<PageShopping> {
                             child: Image.asset(
                                 'assets/images/bau_topo_branco.png'),
                           ),
-                          // Spacer(),
-                          // Container(
-                          //   padding: EdgeInsets.fromLTRB(10, 0, 0, 20),
-                          //   height: MediaQuery.of(context).size.height * 0.3,
-                          //   width: MediaQuery.of(context).size.width * 0.1,
-                          //   child: Image.asset('assets/images/botao_fecha.png'),
-                          // ),
                         ],
                       ),
                     ],
@@ -74,7 +68,7 @@ class _PageShoppingState extends State<PageShopping> {
                   height: MediaQuery.of(context).size.height * 0.2,
                   alignment: Alignment.centerRight,
                   child: GestureDetector(
-                    onTap: () {},
+                    onTap: () => Modular.to.navigate('/'),
                     child: Image.asset(
                       'assets/images/botao_fechar.png',
                       fit: BoxFit.fill,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class PageAbout extends StatefulWidget {
   @override
@@ -29,36 +30,23 @@ class _PageAboutState extends State<PageAbout> {
                     children: [
                       Container(
                         // alignment: Alignment.centerRight,
-                        child: Image.asset(
-                          'assets/images/botao_sobre.png',
-                          fit: BoxFit.fill,
-                          width: MediaQuery.of(context).size.width * 0.5,
+                        child: GestureDetector(
+                          onTap: () => Modular.to.navigate('/PageAbout'),
+                          child: Image.asset(
+                            'assets/images/botao_sobre.png',
+                            fit: BoxFit.fill,
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
                         ),
                       ),
                     ],
                   ),
-                  // Column(
-                  //   children: [
-                  //     Row(
-                  //       children: [
-                  //         Container(
-                  //           alignment: Alignment.center,
-                  //           child: Image.asset(
-                  //             'assets/images/botao_sobre.png',
-                  //             // width: MediaQuery.of(context).size.width * 0.4,
-                  //             // height: MediaQuery.of(context).size.height * 0.1,
-                  //           ),
-                  //         ),
-                  //       ],
-                  //     ),
-                  //   ],
-                  // ),
                   Column(
                     children: [
                       Container(
                         alignment: Alignment.centerRight,
                         child: GestureDetector(
-                          onTap: () {},
+                          onTap: () => Modular.to.navigate('/'),
                           child: Image.asset(
                             'assets/images/botao_fechar.png',
                             fit: BoxFit.fill,
